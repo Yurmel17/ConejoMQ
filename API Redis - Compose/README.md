@@ -11,4 +11,4 @@ También crearemos un archivo `requirements.txt` en la carpeta.
 
 El archivo `docker-compose.yml` que configurará los contenedores de la aplicación como servicios. También agrega todas las configuraciones necesarias para ejecutar 
 
-Enlace al documento con las evidencias: https://drive.google.com/drive/folders/1WZhDyJpY5zHmWQeCGVZ31TD0Fqshics?usp=share_link
+- Enlace al documento con las evidencias: https://drive.google.com/drive/folders/1WZhDyJpY5zHmWQeCGVZ31TD0Fqshics?usp=share_link
