@@ -1,4 +1,4 @@
-### Api-Rest con Flask y Redis, con Docker compose
+### Taller: Api-Rest con Flask y Redis, con Docker compose
 
 En el desarrollo de este taller, se creó un API REST que usa el motor de REDIS para almacenar la información enviada. Esta se envía a través de un Post que contiene 2 parámetros, el primero es el código del estudiante y el segundo sus datos básicos (nombre, email, carrera, nivel). 
 
