@@ -1,9 +1,13 @@
-# Ejercicio API REST usando REDIS
+### Api-Rest con Flask y Redis, con Docker compose
 
 En el desarrollo de este taller, se creó un API REST que usa el motor de REDIS para almacenar la información enviada. Esta se envía a través de un Post que contiene 2 parámetros, el primero es el código del estudiante y el segundo sus datos básicos (nombre, email, carrera, nivel). 
 
-El API se consulta con un GET que reciba como parámetro el código de estudiante y retorna la información asociada al mismo en un JSON.
+Despues de crear la app.py.
 
-El despliegue de Redis se realizó a través de un contenedor Docker.
+## Contenerizar la api en redis con docker compose
 
-A continuación se muestra la implementación realizada.
+Se deben crear un dockerfiles, docker-compose.yaml y un requirements.txt
+un Dockerfile para construir la imagen de la aplicación Python Flask. La implementación de un contenedor de Redis para el almacenamiento en caché no requiere un Dockerfile porque usaremos la imagen oficial de Redis Docker de Docker Hub. La imagen oficial también se conoce como imagen base/principal.
+También crearemos un archivo `requirements.txt` en la carpeta.
+
+El archivo `docker-compose.yml` que configurará los contenedores de la aplicación como servicios. También agrega todas las configuraciones necesarias para ejecutar 
