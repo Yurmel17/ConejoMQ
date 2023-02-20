@@ -1,7 +1,9 @@
 from itertools import product
 from flask import Flask,jsonify, request
+from redis import Redis
 
 app = Flask(__name__)
+redis = Redis(host='redis', port=6379)
 
 from estudiante import estudiante
 
@@ -34,4 +36,4 @@ def addEstudiante():
     return jsonify({"message": "Estudiante agregado Existosamente", "estudiante": estudiante})
 
 if __name__=='__main__':
-    app.run(debug=True, port=4000)
+    app.run(host="0.0.0.0", debug=True)
